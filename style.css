@@ -1,0 +1,1107 @@
+/* =====================
+   RESET & BASE
+===================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #FFFFFF;
+    --cream: #F7F4F0;
+    --text: #1C1C1C;
+    --text-muted: #7F7F7F;
+    --accent: #9B8272;
+    --border: #E5E0D8;
+
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+    --max-width: 1200px;
+    --side-pad: 48px;
+    --section-v: 120px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.75;
+    overflow-x: hidden;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* =====================
+   TYPOGRAPHY
+===================== */
+h1, h2, h3 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    line-height: 1.12;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 9vw, 8.5rem);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.8rem;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    letter-spacing: -0.01em;
+    margin-bottom: 1.8rem;
+}
+
+h3 {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.section-label {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 1.2rem;
+}
+
+.lead {
+    font-size: 1.1rem;
+    line-height: 1.85;
+    color: var(--text-muted);
+    max-width: 640px;
+    margin: 0 auto 3rem;
+}
+
+/* =====================
+   LAYOUT
+===================== */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--side-pad);
+}
+
+.container.narrow {
+    max-width: 860px;
+    text-align: center;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.btn-primary {
+    display: inline-block;
+    padding: 14px 38px;
+    background: var(--text);
+    color: var(--white);
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border: 1.5px solid var(--text);
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--text);
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 14px 38px;
+    background: transparent;
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border: 1.5px solid var(--text);
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: var(--text);
+    color: var(--white);
+}
+
+/* =====================
+   IMAGE PLACEHOLDER
+===================== */
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border: 1px solid var(--border);
+}
+
+.image-placeholder.tall {
+    aspect-ratio: 3 / 4;
+    height: auto;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px var(--side-pad);
+    transition: padding 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbar.scrolled {
+    padding: 16px var(--side-pad);
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 1px 0 var(--border);
+}
+
+.nav-logo a {
+    font-family: var(--font-serif);
+    font-size: 1.45rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: var(--text);
+}
+
+.nav-dr {
+    font-family: var(--font-sans);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    margin-right: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--text);
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--text);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.lang-toggle {
+    background: none;
+    border: none;
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 0;
+}
+
+.lang-toggle:hover {
+    color: var(--text);
+}
+
+.nav-cta {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 8px 22px;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.nav-cta:hover {
+    background: var(--text);
+    color: var(--white);
+    border-color: var(--text);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 1002;
+}
+
+.hamburger span {
+    display: block;
+    width: 22px;
+    height: 1px;
+    background: var(--text);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+/* =====================
+   HERO
+===================== */
+.hero {
+    display: grid;
+    grid-template-columns: 48% 52%;
+    min-height: 100vh;
+}
+
+.hero-image {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 65% top;
+    display: block;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 72px 80px 72px;
+}
+
+.hero-eyebrow {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.hero-credentials {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-tagline {
+    font-family: var(--font-serif);
+    font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.75;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+    max-width: 420px;
+}
+
+/* =====================
+   ABOUT
+===================== */
+.about {
+    padding: var(--section-v) 0;
+    background: var(--white);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-text p {
+    font-size: 0.96rem;
+    line-height: 1.9;
+    color: var(--text-muted);
+    margin-bottom: 1.1rem;
+}
+
+.about-text p:first-of-type {
+    color: var(--text);
+}
+
+.about-text .btn-secondary {
+    margin-top: 1.5rem;
+}
+
+.about-photo {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    display: block;
+    background: var(--cream);
+    padding: 48px;
+}
+
+/* =====================
+   CHIRO INTRO
+===================== */
+.chiro-intro {
+    padding: var(--section-v) 0;
+    background: var(--cream);
+}
+
+.chiro-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    text-align: left;
+    margin-top: 3rem;
+}
+
+.pillar-line {
+    width: 32px;
+    height: 1px;
+    background: var(--accent);
+    margin-bottom: 1.5rem;
+}
+
+.pillar h3 {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+}
+
+.pillar p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+/* =====================
+   TREATMENTS
+===================== */
+.treatments {
+    padding: var(--section-v) 0;
+    background: var(--white);
+}
+
+.treatments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3.5rem;
+    border: 1px solid var(--border);
+}
+
+.treatment-card {
+    padding: 48px 40px;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.3s ease;
+}
+
+.treatment-card:nth-child(3),
+.treatment-card:nth-child(6) {
+    border-right: none;
+}
+
+.treatment-card:nth-child(4),
+.treatment-card:nth-child(5),
+.treatment-card:nth-child(6) {
+    border-bottom: none;
+}
+
+.treatment-card:hover {
+    background: var(--cream);
+}
+
+.treatment-card p {
+    font-size: 0.87rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+/* =====================
+   REVIEWS
+===================== */
+.reviews {
+    padding: var(--section-v) 0;
+    background: var(--cream);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 3.5rem;
+}
+
+.review-card {
+    background: var(--white);
+    padding: 44px 40px;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.review-stars {
+    font-size: 0.9rem;
+    color: #E0392A;
+    letter-spacing: 2px;
+}
+
+.yelp-badge {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #E0392A;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.yelp-icon {
+    width: 14px;
+    height: 14px;
+    fill: #E0392A;
+}
+
+.review-quote {
+    font-family: var(--font-serif);
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--border);
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.review-text {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.85;
+    color: var(--text);
+    margin-bottom: 1.8rem;
+}
+
+.review-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--border);
+}
+
+.review-author {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.review-date {
+    font-size: 0.72rem;
+    color: var(--border);
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.reviews-yelp-cta {
+    margin-top: 52px;
+    text-align: center;
+}
+
+.yelp-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* =====================
+   CONTACT
+===================== */
+.contact {
+    padding: var(--section-v) 0;
+    background: var(--white);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.contact-sub {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.85;
+    margin-bottom: 3rem;
+    max-width: 380px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-label-text {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.contact-item > span:last-child {
+    font-size: 0.95rem;
+    color: var(--text);
+}
+
+.contact-link {
+    font-size: 0.95rem;
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+    display: inline-block;
+    padding-bottom: 1px;
+}
+
+.contact-link:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+/* FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    background: transparent;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--text);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: transparent;
+}
+
+.form-success {
+    display: none;
+    font-size: 0.88rem;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    padding-top: 4px;
+}
+
+.form-success.visible {
+    display: block;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+    background: var(--text);
+    color: var(--white);
+    padding: 56px 0;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-name {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+.footer-sub {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 5px;
+}
+
+.footer-copy {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.35);
+    letter-spacing: 0.05em;
+}
+
+/* =====================
+   FADE-IN ANIMATION
+===================== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =====================
+   RESPONSIVE — TABLET (≤1024px)
+===================== */
+@media (max-width: 1024px) {
+    :root {
+        --side-pad: 32px;
+        --section-v: 90px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .hero-image {
+        position: relative;
+        height: 68vw;
+        max-height: 540px;
+    }
+
+    .hero-content {
+        padding: 64px 40px 80px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .about-image {
+        order: -1;
+    }
+
+    .about-photo {
+        aspect-ratio: 4 / 3;
+        padding: 40px;
+    }
+
+    .chiro-pillars {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .chiro-intro .lead {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .chiro-intro .container.narrow {
+        text-align: left;
+    }
+
+    .treatments-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .treatment-card:nth-child(3) { border-right: 1px solid var(--border); }
+    .treatment-card:nth-child(2n) { border-right: none; }
+    .treatment-card:nth-child(4),
+    .treatment-card:nth-child(5) { border-bottom: 1px solid var(--border); }
+    .treatment-card:nth-child(6) { border-bottom: none; }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 56px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+}
+
+/* =====================
+   RESPONSIVE — MOBILE (≤720px)
+===================== */
+@media (max-width: 720px) {
+    :root {
+        --side-pad: 22px;
+        --section-v: 64px;
+    }
+
+    /* --- NAVBAR --- */
+    .navbar {
+        padding: 18px var(--side-pad);
+    }
+
+    .navbar.scrolled {
+        padding: 12px var(--side-pad);
+    }
+
+    .nav-logo a {
+        font-size: 1.05rem;
+    }
+
+    .nav-dr {
+        font-size: 0.6rem;
+    }
+
+    .nav-links {
+        position: fixed;
+        inset: 0;
+        background: var(--white);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.35s ease;
+        z-index: 1001;
+    }
+
+    .nav-links.open {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .nav-links a {
+        font-size: 1.1rem;
+        letter-spacing: 0.22em;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* --- HERO --- */
+    .hero-image {
+        height: 92vw;
+        max-height: none;
+    }
+
+    .hero-content {
+        padding: 44px var(--side-pad) 64px;
+    }
+
+    .hero-eyebrow {
+        margin-bottom: 0.8rem;
+    }
+
+    h1 {
+        font-size: clamp(2.2rem, 10.5vw, 3.5rem);
+        margin-bottom: 0.6rem;
+    }
+
+    .hero-credentials {
+        margin-top: -0.3rem;
+        margin-bottom: 1.4rem;
+        font-size: 0.68rem;
+    }
+
+    .hero-tagline {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        max-width: 100%;
+    }
+
+    /* --- ABOUT --- */
+    .about-photo {
+        aspect-ratio: 1;
+        padding: 20px;
+    }
+
+    .about-text p {
+        font-size: 0.92rem;
+    }
+
+    /* --- CHIRO INTRO --- */
+    .chiro-intro .container.narrow {
+        text-align: left;
+    }
+
+    .chiro-intro .lead {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+    .chiro-pillars {
+        gap: 28px;
+        margin-top: 2rem;
+    }
+
+    /* --- TREATMENTS --- */
+    .treatments-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .treatment-card {
+        border-right: none !important;
+        border-bottom: 1px solid var(--border) !important;
+        padding: 32px var(--side-pad);
+    }
+
+    .treatment-card:last-child {
+        border-bottom: none !important;
+    }
+
+    /* --- REVIEWS --- */
+    .review-card {
+        padding: 28px 22px;
+    }
+
+    /* --- CONTACT --- */
+    .contact-sub {
+        max-width: 100%;
+    }
+
+    /* --- BUTTONS (full-width for easier tapping) --- */
+    .hero-content .btn-primary,
+    .about-text .btn-secondary {
+        display: block;
+        text-align: center;
+        padding: 16px 24px;
+    }
+
+    /* --- FOOTER --- */
+    .footer-inner {
+        flex-direction: column;
+        gap: 14px;
+        text-align: center;
+    }
+}
+
+/* =====================
+   RESPONSIVE — SMALL PHONE (≤430px — iPhone SE, 12 mini, 15)
+===================== */
+@media (max-width: 430px) {
+    :root {
+        --side-pad: 18px;
+    }
+
+    .nav-logo a {
+        font-size: 0.9rem;
+        letter-spacing: 0;
+    }
+
+    h1 {
+        font-size: 2.1rem;
+        letter-spacing: -0.01em;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .hero-image {
+        height: 100vw;
+    }
+
+    .hero-content {
+        padding: 36px var(--side-pad) 56px;
+    }
+
+    .hero-eyebrow {
+        font-size: 0.65rem;
+    }
+
+    .hero-credentials {
+        font-size: 0.62rem;
+        letter-spacing: 0.16em;
+    }
+
+    .hero-tagline {
+        font-size: 0.95rem;
+    }
+
+    .about-photo {
+        padding: 16px;
+    }
+
+    .section-label {
+        font-size: 0.65rem;
+    }
+
+    .treatment-card {
+        padding: 28px var(--side-pad);
+    }
+
+    .treatment-card h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .review-card {
+        padding: 24px 18px;
+    }
+
+    .review-quote {
+        font-size: 2.5rem;
+    }
+
+    .review-text {
+        font-size: 0.97rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 1rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        font-size: 0.72rem;
+        padding: 15px 22px;
+    }
+
+    .contact-details {
+        gap: 16px;
+    }
+
+    .footer {
+        padding: 44px 0;
+    }
+
+    .footer-name {
+        font-size: 1.2rem;
+    }
+}

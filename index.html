@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR. Elisabetta Alfonsi, DACNB — Chiropratica a Milano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar" id="navbar">
+    <div class="nav-logo">
+        <a href="#home"><span class="nav-dr" data-i18n="nav_prefix">DR.</span> Elisabetta Alfonsi</a>
+    </div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="nav_about">Chi sono</a></li>
+        <li><a href="#treatments" data-i18n="nav_treatments">Trattamenti</a></li>
+        <li><a href="#reviews" data-i18n="nav_reviews">Testimonianze</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contatti</a></li>
+    </ul>
+    <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+        <a href="#contact" class="nav-cta" data-i18n="nav_cta">Prenota</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-image">
+        <img src="elisabettaalfonsi.jpg" alt="Elisabetta Alfonsi, chiropratica a Milano" class="hero-photo">
+    </div>
+    <div class="hero-content fade-in">
+        <p class="hero-eyebrow" data-i18n="hero_eyebrow">Chiropratica a Milano</p>
+        <h1>Elisabetta<br>Alfonsi</h1>
+        <p class="hero-credentials" data-i18n="hero_credentials">DR., DACNB</p>
+        <p class="hero-tagline" data-i18n="hero_tagline">La salute della tua colonna vertebrale è il punto di partenza per il tuo benessere.</p>
+        <a href="#contact" class="btn-primary" data-i18n="hero_cta">Prenota una visita</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-text fade-in">
+                <span class="section-label" data-i18n="about_label">Chi sono</span>
+                <h2 data-i18n="about_heading">25+ anni di esperienza</h2>
+                <p data-i18n="about_p1">Sono Elisabetta, chiropratica con studio a Milano. Ho scelto questa professione perché credo nel potere del corpo di guarire se sostenuto nel modo giusto.</p>
+                <p data-i18n="about_p2">La chiropratica si occupa della relazione tra la colonna vertebrale e il sistema nervoso. Attraverso aggiustamenti specifici e non invasivi, aiuto i miei pazienti a ritrovare il benessere e a prevenire i disturbi muscoloscheletrici.</p>
+                <p data-i18n="about_p3">Ogni percorso è personalizzato: ascolto, valuto e propongo un piano di cura su misura per te.</p>
+                <a href="#contact" class="btn-secondary" data-i18n="about_cta">Vieni a trovarmi</a>
+            </div>
+            <div class="about-image fade-in">
+                <img src="schiena.jpg" alt="Illustrazione colonna vertebrale" class="about-photo">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHAT IS CHIROPRACTIC -->
+<section class="chiro-intro">
+    <div class="container narrow">
+        <div class="fade-in">
+            <span class="section-label" data-i18n="chiro_label">La chiropratica</span>
+            <h2 data-i18n="chiro_heading">Cosa fa un chiropratico?</h2>
+            <p class="lead" data-i18n="chiro_lead">La chiropratica è una disciplina sanitaria riconosciuta che si concentra sulla diagnosi e il trattamento dei disturbi del sistema muscoloscheletrico, in particolare della colonna vertebrale.</p>
+        </div>
+        <div class="chiro-pillars">
+            <div class="pillar fade-in">
+                <div class="pillar-line"></div>
+                <h3 data-i18n="pillar1_title">Senza farmaci</h3>
+                <p data-i18n="pillar1_text">Un approccio naturale che non ricorre a medicinali o interventi chirurgici.</p>
+            </div>
+            <div class="pillar fade-in">
+                <div class="pillar-line"></div>
+                <h3 data-i18n="pillar2_title">Non invasiva</h3>
+                <p data-i18n="pillar2_text">Tecniche manuali precise e sicure, adatte a persone di tutte le età.</p>
+            </div>
+            <div class="pillar fade-in">
+                <div class="pillar-line"></div>
+                <h3 data-i18n="pillar3_title">Personalizzata</h3>
+                <p data-i18n="pillar3_text">Ogni piano di trattamento è costruito intorno alle tue esigenze specifiche.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TREATMENTS -->
+<section class="treatments" id="treatments">
+    <div class="container">
+        <div class="fade-in">
+            <span class="section-label" data-i18n="treatments_label">Trattamenti</span>
+            <h2 data-i18n="treatments_heading">Di cosa mi occupo</h2>
+        </div>
+        <div class="treatments-grid">
+            <div class="treatment-card fade-in">
+                <h3 data-i18n="t1_title">Mal di schiena</h3>
+                <p data-i18n="t1_text">Trattamento delle lombalgie acute e croniche, ernie del disco e sciatalgie.</p>
+            </div>
+            <div class="treatment-card fade-in">
+                <h3 data-i18n="t2_title">Cervicale e collo</h3>
+                <p data-i18n="t2_text">Riduzione di tensioni, blocchi cervicali e dolori al collo legati alla postura.</p>
+            </div>
+            <div class="treatment-card fade-in">
+                <h3 data-i18n="t3_title">Mal di testa</h3>
+                <p data-i18n="t3_text">Approccio alle cefalee di tensione e emicranie di origine cervicale.</p>
+            </div>
+            <div class="treatment-card fade-in">
+                <h3 data-i18n="t4_title">Postura</h3>
+                <p data-i18n="t4_text">Valutazione e correzione posturale per prevenire e migliorare squilibri strutturali.</p>
+            </div>
+            <div class="treatment-card fade-in">
+                <h3 data-i18n="t5_title">Sport e recupero</h3>
+                <p data-i18n="t5_text">Supporto agli sportivi per la prevenzione degli infortuni e il recupero delle performance.</p>
+            </div>
+            <div class="treatment-card fade-in">
+                <h3 data-i18n="t6_title">Benessere generale</h3>
+                <p data-i18n="t6_text">Percorsi di mantenimento per chi vuole prendersi cura del proprio corpo nel lungo periodo.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+    <div class="container">
+        <div class="fade-in">
+            <span class="section-label" data-i18n="reviews_label">Testimonianze</span>
+            <h2 data-i18n="reviews_heading">Cosa dicono i pazienti</h2>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card fade-in">
+                <div class="review-top">
+                    <div class="review-stars" aria-label="5 stelle">★★★★★</div>
+                    <div class="yelp-badge">
+                        <svg class="yelp-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-.5 4.5c.276 0 .5.224.5.5v4.586l2.293-2.293a.5.5 0 0 1 .707.707L12.5 12.5v.086l2.957 1.077a.5.5 0 0 1-.344.938L12 13.5v.086l.957 2.627a.5.5 0 1 1-.938.344L11 13.914l-2.02 2.02a.5.5 0 0 1-.707-.707L10.5 13h-.086L7.84 14.015a.5.5 0 1 1-.344-.938L10.5 12v-.086L8.207 9.707a.5.5 0 1 1 .707-.707L11 11.086V7a.5.5 0 0 1 .5-.5z"/></svg>
+                        <span>Yelp</span>
+                    </div>
+                </div>
+                <p class="review-quote">"</p>
+                <p class="review-text" data-i18n="r1_text">Dr. Alfonsi is simply the BEST! Her holistic approach & combination of many different treatments — body work, energy work and adjustments — has made such a difference in both of us. I always look forward to our sessions. I feel hopeful & renewed after each one. Dr. Alfonsi truly cares about her patients.</p>
+                <div class="review-meta">
+                    <p class="review-author">— Niki B., Bellingham WA</p>
+                    <p class="review-date">Mar 2020</p>
+                </div>
+            </div>
+            <div class="review-card fade-in">
+                <div class="review-top">
+                    <div class="review-stars" aria-label="5 stelle">★★★★★</div>
+                    <div class="yelp-badge">
+                        <svg class="yelp-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-.5 4.5c.276 0 .5.224.5.5v4.586l2.293-2.293a.5.5 0 0 1 .707.707L12.5 12.5v.086l2.957 1.077a.5.5 0 0 1-.344.938L12 13.5v.086l.957 2.627a.5.5 0 1 1-.938.344L11 13.914l-2.02 2.02a.5.5 0 0 1-.707-.707L10.5 13h-.086L7.84 14.015a.5.5 0 1 1-.344-.938L10.5 12v-.086L8.207 9.707a.5.5 0 1 1 .707-.707L11 11.086V7a.5.5 0 0 1 .5-.5z"/></svg>
+                        <span>Yelp</span>
+                    </div>
+                </div>
+                <p class="review-quote">"</p>
+                <p class="review-text" data-i18n="r2_text">After my third session, all done within 2 weeks, I had my first pain-free day. And I continue to have pain-free days! I'm walking normally, even exercising again. All the adjustments were so gentle — no hard cracking or twisting of any sort. I would absolutely recommend her.</p>
+                <div class="review-meta">
+                    <p class="review-author">— Ann L., San Francisco CA</p>
+                    <p class="review-date">Feb 2022</p>
+                </div>
+            </div>
+            <div class="review-card fade-in">
+                <div class="review-top">
+                    <div class="review-stars" aria-label="5 stelle">★★★★★</div>
+                    <div class="yelp-badge">
+                        <svg class="yelp-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-.5 4.5c.276 0 .5.224.5.5v4.586l2.293-2.293a.5.5 0 0 1 .707.707L12.5 12.5v.086l2.957 1.077a.5.5 0 0 1-.344.938L12 13.5v.086l.957 2.627a.5.5 0 1 1-.938.344L11 13.914l-2.02 2.02a.5.5 0 0 1-.707-.707L10.5 13h-.086L7.84 14.015a.5.5 0 1 1-.344-.938L10.5 12v-.086L8.207 9.707a.5.5 0 1 1 .707-.707L11 11.086V7a.5.5 0 0 1 .5-.5z"/></svg>
+                        <span>Yelp</span>
+                    </div>
+                </div>
+                <p class="review-quote">"</p>
+                <p class="review-text" data-i18n="r3_text">It's 2023 and I haven't had a migraine since I started seeing Dr. Alfonsi. She has helped me with digestion problems, major back pain, as well as hip and leg pain. I trust her more than my general doctor to help treat me.</p>
+                <div class="review-meta">
+                    <p class="review-author">— Marie R., San Francisco CA</p>
+                    <p class="review-date">Jan 2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="reviews-yelp-cta fade-in">
+            <a href="https://www.yelp.com/biz/alfonsi-elisabetta-dc-dacnb-san-francisco" target="_blank" rel="noopener" class="btn-secondary yelp-cta-btn" data-i18n="reviews_yelp_cta">
+                Leggi tutte le recensioni su Yelp →
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info fade-in">
+                <span class="section-label" data-i18n="contact_label">Contatti</span>
+                <h2 data-i18n="contact_heading">Prenota una visita</h2>
+                <p class="contact-sub" data-i18n="contact_sub">Chiamami per fissare un appuntamento o per qualsiasi domanda.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-label-text" data-i18n="contact_location_label">Studio</span>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Via+Ricasoli+2+Milano+Italia" target="_blank" rel="noopener" class="contact-link">Via Ricasoli, 2 — Milano, Italia</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label-text">Email</span>
+                        <a href="mailto:dralfonsi@gmail.com" class="contact-link">dralfonsi@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label-text" data-i18n="contact_phone_label">Telefono</span>
+                        <a href="tel:+393758032267" class="contact-link">+39 375 803 2267</a>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form fade-in" id="contactForm" netlify name="contact">
+                <input type="hidden" name="form-name" value="contact">
+                <div class="form-group">
+                    <label for="name" data-i18n="form_name">Nome e cognome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" data-i18n="form_message">Messaggio</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary" id="formSubmit" data-i18n="form_submit">Invia</button>
+                <p class="form-success" id="formSuccess" data-i18n="form_success">Messaggio inviato! Ti risponderò presto.</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="footer-brand">
+            <p class="footer-name">Elisabetta Alfonsi</p>
+            <p class="footer-sub" data-i18n="footer_sub">Chiropratica a Milano</p>
+        </div>
+        <p class="footer-copy" data-i18n="footer_copy">© 2026 Elisabetta Alfonsi. Tutti i diritti riservati.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
