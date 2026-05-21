@@ -13,33 +13,21 @@ const translations = {
         placeholder_photo: 'Foto professionale',
         about_label: 'Chi sono',
         about_heading: '25+ anni di esperienza',
-        about_p1: 'Sono Elisabetta Alfonsi, DC, DACNB — chiropratica con studio a Milano. Ho scelto questa professione perché credo nel potere del corpo di guarire se sostenuto nel modo giusto.',
-        about_p2: 'La chiropratica si occupa della relazione tra la colonna vertebrale e il sistema nervoso. Attraverso aggiustamenti specifici e non invasivi, aiuto i miei pazienti a ritrovare il benessere e a prevenire i disturbi muscoloscheletrici.',
-        about_p3: 'Ogni percorso è personalizzato: ascolto, valuto e propongo un piano di cura su misura per te.',
+        about_p1: 'Sono Elisabetta Alfonsi D.C. D.A.C.N.B., chiropratica con studio a Milano. Ho scelto questa professione perché poter aiutare le persone che convivono con dolori e fastidi che compromettono la loro vita quotidiana mi dà una grande soddisfazione. Migliorare il loro benessere e la qualità della loro vita è quello che mi motiva ogni giorno e mi ricorda l\'importanza di svolgere questo lavoro con empatia, attenzione e umiltà.',
+        about_p2: 'Con oltre 25 anni di esperienza professionale a San Francisco, in California, ho avuto l\'opportunità di lavorare con pazienti provenienti dalla Silicon Valley e collaborare con importanti ospedali dell\'area di San Francisco.',
+        about_p3: 'Nel corso della mia carriera ho costruito una rete professionale con alcune delle principali assicurazioni sanitarie legate alle grandi aziende della Silicon Valley, incluse realtà come Meta e Google.',
+        about_p4: 'La mia esperienza internazionale mi ha permesso di sviluppare un approccio professionale orientato alla persona, con l\'obiettivo di aiutare ogni paziente a ridurre il dolore, migliorare il benessere quotidiano e ritrovare una migliore qualità di vita.',
         about_cta: 'Vieni a trovarmi',
-        chiro_label: 'La chiropratica',
-        chiro_heading: 'Cosa fa un chiropratico?',
-        chiro_lead: 'La chiropratica è una disciplina sanitaria riconosciuta che si concentra sulla diagnosi e il trattamento dei disturbi del sistema muscoloscheletrico, in particolare della colonna vertebrale.',
-        pillar1_title: 'Senza farmaci',
-        pillar1_text: 'Un approccio naturale che non ricorre a medicinali o interventi chirurgici.',
-        pillar2_title: 'Non invasiva',
-        pillar2_text: 'Tecniche manuali precise e sicure, adatte a persone di tutte le età.',
-        pillar3_title: 'Personalizzata',
-        pillar3_text: 'Ogni piano di trattamento è costruito intorno alle tue esigenze specifiche.',
         treatments_label: 'Trattamenti',
         treatments_heading: 'Di cosa mi occupo',
         t1_title: 'Mal di schiena',
-        t1_text: 'Trattamento delle lombalgie acute e croniche, ernie del disco e sciatalgie.',
-        t2_title: 'Cervicale e collo',
-        t2_text: 'Riduzione di tensioni, blocchi cervicali e dolori al collo legati alla postura.',
+        t1_text: 'Trattamento del mal di schiena, protrusione o ernia del disco, sciatalgia, dolore irradiato e formicolii alla gamba.',
+        t2_title: 'Male al collo',
+        t2_text: 'Trattamento e soluzioni chiropratiche per il "Tech Neck". L\'utilizzo prolungato di smartphone, tablet e computer, associato alla costante flessione del capo verso il basso, può determinare alterazioni della fisiologica curvatura del collo e favorire l\'inizio di squilibri muscolo-scheletrici, tensioni cervicali, cefalee, limitazioni della mobilità e vertigini.',
         t3_title: 'Mal di testa',
-        t3_text: 'Approccio alle cefalee di tensione e emicranie di origine cervicale.',
+        t3_text: 'Accurata e specifica valutazione delle possibili cause del mal di testa, tensione cervicale, alterazione posturale e disfunzioni propriocettive. Il trattamento viene personalizzato sulla base della storia clinica del paziente. L\'approccio è delicato, non invasivo e confortevole.',
         t4_title: 'Postura',
-        t4_text: 'Valutazione e correzione posturale per prevenire e migliorare squilibri strutturali.',
-        t5_title: 'Sport e recupero',
-        t5_text: 'Supporto agli sportivi per la prevenzione degli infortuni e il recupero delle performance.',
-        t6_title: 'Benessere generale',
-        t6_text: 'Percorsi di mantenimento per chi vuole prendersi cura del proprio corpo nel lungo periodo.',
+        t4_text: 'Oggi si considera un mito l\'idea della postura perfetta. Non esiste una posizione ideale valida per tutti, perché il corpo umano è fatto per adattarsi continuamente ai cambiamenti e alle richieste dell\'ambiente. Più che cercare un allineamento perfetto, è importante capire come il sistema nervoso usa le informazioni provenienti da occhi, equilibrio, muscoli, articolazioni e piedi per mantenere stabilità equilibrio e coordinazione.<br><br>La postura è un processo dinamico guidato dal cervello e dal sistema nervoso. Ad ogni paziente nel mio studio vengono suggeriti esercizi specifici in base alle caratteristiche del sistema nervoso e alle esigenze individuali.',
         reviews_label: 'Testimonianze',
         reviews_heading: 'Cosa dicono i pazienti',
         reviews_yelp_cta: 'Leggi tutte le recensioni su Yelp →',
@@ -73,33 +61,21 @@ const translations = {
         placeholder_photo: 'Professional photo',
         about_label: 'About me',
         about_heading: '25+ years of experience',
-        about_p1: 'I\'m Elisabetta Alfonsi, DC, DACNB — a chiropractor based in Milan. I chose this profession because I believe in the body\'s ability to heal itself when given the right support.',
-        about_p2: 'Chiropractic care focuses on the relationship between the spine and the nervous system. Through specific, non-invasive adjustments, I help my patients find relief and prevent musculoskeletal disorders.',
-        about_p3: 'Every treatment plan is personalized: I listen, assess, and create a tailored care plan for you.',
+        about_p1: 'I am Elisabetta Alfonsi D.C. D.A.C.N.B., a chiropractor based in Milan. I chose this profession because helping people who live with pain and discomfort that affects their daily lives gives me great satisfaction. Improving their wellbeing and quality of life is what motivates me every day and reminds me of the importance of doing this work with empathy, care, and humility.',
+        about_p2: 'With over 25 years of professional experience in San Francisco, California, I had the opportunity to work with patients from Silicon Valley and collaborate with major hospitals in the San Francisco area.',
+        about_p3: 'Throughout my career, I have built a professional network with some of the leading health insurance providers tied to major Silicon Valley companies, including organizations such as Meta and Google.',
+        about_p4: 'My international experience has allowed me to develop a person-centered professional approach, with the goal of helping each patient reduce pain, improve daily wellbeing, and regain a better quality of life.',
         about_cta: 'Come and see me',
-        chiro_label: 'Chiropractic',
-        chiro_heading: 'What does a chiropractor do?',
-        chiro_lead: 'Chiropractic is a recognized healthcare discipline focused on the diagnosis and treatment of musculoskeletal disorders, particularly those related to the spine.',
-        pillar1_title: 'Drug-free',
-        pillar1_text: 'A natural approach that does not rely on medication or surgical procedures.',
-        pillar2_title: 'Non-invasive',
-        pillar2_text: 'Precise and safe manual techniques, suitable for people of all ages.',
-        pillar3_title: 'Personalized',
-        pillar3_text: 'Every treatment plan is built around your specific needs.',
         treatments_label: 'Treatments',
         treatments_heading: 'What I treat',
         t1_title: 'Back pain',
-        t1_text: 'Treatment of acute and chronic lower back pain, herniated discs, and sciatica.',
-        t2_title: 'Neck & cervical',
-        t2_text: 'Relief from tension, cervical blockages, and posture-related neck pain.',
+        t1_text: 'Treatment of back pain, disc protrusion or herniation, sciatica, radiated pain, and tingling in the leg.',
+        t2_title: 'Neck pain',
+        t2_text: 'Chiropractic treatment and solutions for "Tech Neck". Prolonged use of smartphones, tablets, and computers — combined with constant downward head flexion — can alter the natural curvature of the neck and trigger musculoskeletal imbalances, cervical tension, headaches, restricted mobility, and dizziness.',
         t3_title: 'Headaches',
-        t3_text: 'Approach to tension headaches and migraines of cervical origin.',
+        t3_text: 'Thorough and specific assessment of the possible causes of headaches, cervical tension, postural imbalances, and proprioceptive dysfunction. Treatment is personalised based on the patient\'s clinical history. The approach is gentle, non-invasive, and comfortable.',
         t4_title: 'Posture',
-        t4_text: 'Postural assessment and correction to prevent and improve structural imbalances.',
-        t5_title: 'Sports & recovery',
-        t5_text: 'Support for athletes in injury prevention and performance recovery.',
-        t6_title: 'General wellness',
-        t6_text: 'Maintenance programs for those who want to take care of their body long-term.',
+        t4_text: 'The idea of perfect posture is now considered a myth. There is no single ideal position for everyone, because the human body is designed to continuously adapt to changes in its environment. Rather than seeking perfect alignment, what matters is understanding how the nervous system uses information from the eyes, balance organs, muscles, joints, and feet to maintain stability, balance, and coordination.<br><br>Posture is a dynamic process guided by the brain and nervous system. Each patient at my practice receives specific exercises tailored to their nervous system characteristics and individual needs.',
         reviews_label: 'Reviews',
         reviews_heading: 'What patients say',
         reviews_yelp_cta: 'Read all reviews on Yelp →',
@@ -181,21 +157,6 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-// Contact form — shows success state (swap for real handler when ready)
-document.getElementById('contactForm').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = document.getElementById('formSubmit');
-    const success = document.getElementById('formSuccess');
-    btn.disabled = true;
-    btn.style.opacity = '0.5';
-    success.classList.add('visible');
-    e.target.reset();
-    setTimeout(() => {
-        success.classList.remove('visible');
-        btn.disabled = false;
-        btn.style.opacity = '';
-    }, 4000);
-});
 
 // Apply Italian on load so all data-i18n elements render correctly from the start
 applyLanguage('it');
